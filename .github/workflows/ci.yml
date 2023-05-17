@@ -39,4 +39,4 @@ jobs:
         image: jay2k02/test-repository
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }} 
+        password: ${{ secrets.DOCKER_PASSWORD }}
