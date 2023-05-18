@@ -25,9 +25,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8    
-
+    
+    - name: Clean Gradle
+      run: gradle clean
+    
     - name: Build with Gradle
-      run: ./gradlew sonarqube --stacktrace
+      run: ./gradlew sonarqube --debug
       
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
