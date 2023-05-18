@@ -26,9 +26,6 @@ jobs:
       with:
         java-version: 1.8    
     
-    - name: Clean Gradle
-      run: gradle clean
-    
     - name: Build with Gradle
       run: ./gradlew sonarqube --debug
       
