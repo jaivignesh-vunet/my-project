@@ -24,6 +24,11 @@ dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
 sonarqube {
     properties {
         property "sonar.projectKey", "jaivignesh-vunet_my-project"
