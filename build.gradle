@@ -24,7 +24,10 @@ dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
-
+java {
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+}
 
 sonarqube {
     properties {
