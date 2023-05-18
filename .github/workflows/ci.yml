@@ -36,8 +36,8 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    
 
     - name: Build with Gradle
-      run: ./gradlew build
-
+      run: ./gradlew sonarqube
+      
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
