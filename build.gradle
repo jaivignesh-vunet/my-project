@@ -23,6 +23,7 @@ dependencies {
 sonarqube {
     properties {
         property "sonar.projectKey", "jaivignesh-vunet_my-project"
+        property 'sonar.organization', "jaivignesh-vunet"
         property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.login", "36e1b6c525dbc1dcacf1a9c438cd48c6840e4d73"
     }
